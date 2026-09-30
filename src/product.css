@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.crud {
+    min-height: 100vh;
+    padding-bottom: 50px;
+    background-color: aliceblue;
+}
+
+.heading {
+    color: black;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+/* Form Section */
+
+.add-product {
+    background: rgba(106, 89, 89, 0.15);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.add-product input {
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    padding-left: 15px;
+}
+
+.add-product .btn {
+    width: 100%;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+.add-product .btn:hover {
+    transform: translateY(-2px);
+    background-color: black;
+    color:white;
+}
+
+/* Table */
+
+.read-table {
+    width: 95%;
+    margin: 30px auto;
+    overflow: hidden;
+    background: white;
+}
+
+.read-table th {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.read-table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 15px;
+}
+
+.read-table tbody tr {
+    transition: 0.3s;
+}
+
+.read-table img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+/* Buttons */
+.crud-btns{
+    flex-direction: column;
+}
+.crud-btns .update {
+    background-color: rgb(224, 224, 31);
+    border-radius: 10px;
+    padding: 5px 15px;
+    color:black;
+    font-weight: 600;
+    margin:10px 0px;
+    border: none;
+}
+
+.crud-btns .delete {
+    background-color: rgb(201, 61, 61);
+    border-radius: 10px;
+    padding: 5px 15px;
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+
+/* Mobile */
+
+@media(max-width:768px) {
+
+    .heading {
+        font-size: 30px;
+    }
+
+    .add-product {
+        padding: 20px;
+    }
+
+    .add-product .btn-primary {
+        margin-top: 10px;
+    }
+
+    .read-table {
+        font-size: 14px;
+    }
+
+    .read-table img {
+        width: 50px;
+        height: 50px;
+    }
+}
